@@ -262,12 +262,6 @@
   .max-w-\[1536px\] {
     max-width: 1536px;
   }
-  .flex-1 {
-    flex: 1;
-  }
-  .flex-1\/2 {
-    flex: calc(1/2 * 100%);
-  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -276,12 +270,6 @@
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .flex-row {
-    flex-direction: row;
-  }
-  .items-baseline {
-    align-items: baseline;
   }
   .items-center {
     align-items: center;
@@ -292,14 +280,14 @@
   .justify-between {
     justify-content: space-between;
   }
-  .justify-center {
-    justify-content: center;
-  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -418,9 +406,6 @@
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
-  .pr-1 {
-    padding-right: calc(var(--spacing) * 1);
-  }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
   }
@@ -430,23 +415,11 @@
   .pr-16\.25 {
     padding-right: calc(var(--spacing) * 16.25);
   }
-  .pr-17 {
-    padding-right: calc(var(--spacing) * 17);
-  }
-  .pr-17\.25 {
-    padding-right: calc(var(--spacing) * 17.25);
-  }
   .pr-21 {
     padding-right: calc(var(--spacing) * 21);
   }
   .pr-21\.25 {
     padding-right: calc(var(--spacing) * 21.25);
-  }
-  .pr-24 {
-    padding-right: calc(var(--spacing) * 24);
-  }
-  .pr-24\.25 {
-    padding-right: calc(var(--spacing) * 24.25);
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
@@ -456,12 +429,6 @@
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
-  }
-  .pl-1 {
-    padding-left: calc(var(--spacing) * 1);
-  }
-  .pl-1\.5 {
-    padding-left: calc(var(--spacing) * 1.5);
   }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
@@ -477,18 +444,6 @@
   }
   .pl-18\.5 {
     padding-left: calc(var(--spacing) * 18.5);
-  }
-  .pl-20 {
-    padding-left: calc(var(--spacing) * 20);
-  }
-  .pl-20\.75 {
-    padding-left: calc(var(--spacing) * 20.75);
-  }
-  .pl-26 {
-    padding-left: calc(var(--spacing) * 26);
-  }
-  .pl-26\.5 {
-    padding-left: calc(var(--spacing) * 26.5);
   }
   .text-2xl {
     font-size: var(--text-2xl);
