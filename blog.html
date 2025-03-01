@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,22 +15,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <style>
-        .font-poppins{
+        .font-poppins {
             font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-style: normal;
         }
     </style>
 </head>
+
 <body class="font-poppins bg-[#F4F7FF]">
     <header class="max-w-[1536px] mx-auto mt-6 mb-5 bg-white px-6 py-6 rounded-2xl">
         <nav class="flex justify-between items-center">
-            <div class="flex items-center gap-1.5">
+            <div class="flex items-center gap-1.5 cursor-pointer">
                 <img src="assets/logo.png" alt="">
                 <h1 class="text-4xl font-light text-[#00303C]">Dev<span class="font-bold text-[#00303C]">Board</span>
                 </h1>
             </div>
-            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Back to Desk</button>
+            <button id="home" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Back to
+                Desk</button>
         </nav>
     </header>
     <main class="max-w-[1536px] mx-auto">
@@ -37,33 +40,54 @@
 
         <!-- QNA-01 -->
         <div class="bg-white p-6 rounded-xl mb-6">
-            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-1: What are the different ways to select an element in the DOM?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo? Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-1: What are the
+                different ways to select an element in the DOM?</h1>
+            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
+                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
         </div>
 
         <!-- QNA-02 -->
         <div class="bg-white p-6 rounded-xl mb-6">
-            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo? Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-2: What is the
+                difference between innerHTML, innerText, and textContent ?</h1>
+            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
+                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
         </div>
 
         <!-- QNA-03 -->
         <div class="bg-white p-6 rounded-xl mb-6">
-            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-3: What is event delegation in the DOM?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo? Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-3: What is event
+                delegation in the DOM?</h1>
+            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
+                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
         </div>
 
         <!-- QNA-04 -->
         <div class="bg-white p-6 rounded-xl mb-6">
-            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-4: What is event bubbling in the DOM?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo? Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-4: What is event
+                bubbling in the DOM?</h1>
+            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
+                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
         </div>
 
         <!-- QNA-05 -->
         <div class="bg-white p-6 rounded-xl mb-6">
-            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo? Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-5: How do you create,
+                add, and remove elements using JavaScript?</h1>
+            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
+                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
         </div>
     </main>
+    <script>
+        document.getElementById("home").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
 </body>
+
 </html>

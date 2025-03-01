@@ -6,7 +6,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-violet-950: oklch(0.283 0.141 291.089);
     --color-gray-300: oklch(0.872 0.01 258.338);
     --color-black: #000;
     --color-white: #fff;
@@ -19,8 +18,6 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-9xl: 8rem;
-    --text-9xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
@@ -185,12 +182,6 @@
   }
 }
 @layer utilities {
-  .collapse {
-    visibility: collapse;
-  }
-  .relative {
-    position: relative;
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -206,9 +197,6 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mr-17 {
-    margin-right: calc(var(--spacing) * 17);
-  }
   .mr-17\.25 {
     margin-right: calc(var(--spacing) * 17.25);
   }
@@ -221,20 +209,11 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
-  .mb-8 {
-    margin-bottom: calc(var(--spacing) * 8);
-  }
   .mb-15 {
     margin-bottom: calc(var(--spacing) * 15);
   }
-  .ml-20 {
-    margin-left: calc(var(--spacing) * 20);
-  }
   .ml-20\.75 {
     margin-left: calc(var(--spacing) * 20.75);
-  }
-  .block {
-    display: block;
   }
   .flex {
     display: flex;
@@ -242,26 +221,11 @@
   .grid {
     display: grid;
   }
-  .inline-flex {
-    display: inline-flex;
-  }
-  .list-item {
-    display: list-item;
-  }
-  .table {
-    display: table;
-  }
   .w-66 {
     width: calc(var(--spacing) * 66);
   }
-  .w-85 {
-    width: calc(var(--spacing) * 85);
-  }
   .w-85\.5 {
     width: calc(var(--spacing) * 85.5);
-  }
-  .w-91 {
-    width: calc(var(--spacing) * 91);
   }
   .w-91\.5 {
     width: calc(var(--spacing) * 91.5);
@@ -272,11 +236,8 @@
   .max-w-\[1536px\] {
     max-width: 1536px;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
+  .cursor-pointer {
+    cursor: pointer;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -289,9 +250,6 @@
   }
   .justify-between {
     justify-content: space-between;
-  }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
   }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
@@ -332,10 +290,6 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
@@ -352,9 +306,6 @@
   }
   .bg-\[\#F4F7FF\] {
     background-color: #F4F7FF;
-  }
-  .bg-violet-950 {
-    background-color: var(--color-violet-950);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -401,9 +352,6 @@
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
-  }
   .py-4\.5 {
     padding-block: calc(var(--spacing) * 4.5);
   }
@@ -419,20 +367,11 @@
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
   }
-  .pr-16 {
-    padding-right: calc(var(--spacing) * 16);
-  }
   .pr-16\.25 {
     padding-right: calc(var(--spacing) * 16.25);
   }
-  .pr-21 {
-    padding-right: calc(var(--spacing) * 21);
-  }
   .pr-21\.25 {
     padding-right: calc(var(--spacing) * 21.25);
-  }
-  .pb-3 {
-    padding-bottom: calc(var(--spacing) * 3);
   }
   .pb-3\.5 {
     padding-bottom: calc(var(--spacing) * 3.5);
@@ -452,9 +391,6 @@
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
   }
-  .pl-18 {
-    padding-left: calc(var(--spacing) * 18);
-  }
   .pl-18\.5 {
     padding-left: calc(var(--spacing) * 18.5);
   }
@@ -472,10 +408,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-9xl {
-    font-size: var(--text-9xl);
-    line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -509,18 +441,11 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-50 {
     opacity: 50%;
   }
   .opacity-80 {
     opacity: 80%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
 }
 @property --tw-border-style {
@@ -573,9 +498,4 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }

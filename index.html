@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <style>
-        .font-poppins{
+        .font-poppins {
             font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -58,13 +58,13 @@
                         </div>
                         <div>
                             <h1 class="text-[#00303C] opacity-80">Task Assigned </h1>
-                            <h1 class="text-3xl font-bold text-[#00303C]">05</h1>
+                            <h1 class="text-3xl font-bold text-[#00303C]">06</h1>
                         </div>
                     </div>
 
                     <!-- discover -->
-                    <div
-                        class="flex items-center gap-5.5 py-6 pl-10 pr-21.25 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl w-131">
+                    <div id="blog" onclick="blog"
+                        class="flex items-center gap-5.5 py-6 pl-10 pr-21.25 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl w-131 cursor-pointer">
                         <img src="assets/board.png" alt="">
                         <h1 class="text-2xl font-medium text-white">Discover Something<br>New Today!</h1>
                     </div>
@@ -89,8 +89,7 @@
                             <button class="bg-white py-2 px-4 rounded-lg">ShopEase</button>
                             <h1 class="text-[#00303C] my-4 text-2xl font-medium">Fix Mobile Button Issue</h1>
                             <div class=" bg-white rounded-lg p-4">
-                                <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlapping
-                                    elements...</p>
+                                <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
                             </div>
                         </div>
                         <div class="flex justify-between items-center mt-3">
@@ -209,6 +208,11 @@
             </div>
         </div>
     </main>
+    <script>
+        document.getElementById("blog").addEventListener("click", function () {
+            window.location.href = "blog.html";
+        });
+    </script>
 </body>
 
 </html>
