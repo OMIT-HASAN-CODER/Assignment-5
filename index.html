@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevBoard</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
+
 <body class="bg-[#F4F7FF]">
     <header class="max-w-[1536px] mx-auto mt-6 mb-5 bg-white px-6 py-6 rounded-2xl">
         <nav class="flex justify-between items-center">
             <div class="flex items-center gap-1.5">
                 <img src="assets/logo.png" alt="">
-                <h1 class="text-4xl font-light text-[#00303C]">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
+                <h1 class="text-4xl font-light text-[#00303C]">Dev<span class="font-bold text-[#00303C]">Board</span>
+                </h1>
             </div>
             <div class="flex items-center gap-11">
                 <div class="flex items-center gap-1.5 bg-[#F4F7FF] py-4.5 px-4 rounded-4xl">
@@ -22,5 +25,161 @@
             </div>
         </nav>
     </header>
+    <main class="max-w-[1536px] mx-auto">
+
+        <!-- parent -->
+        <div class="flex gap-6">
+
+            <!-- child-01 -->
+            <div class=" bg-white px-6 pt-6 pb-8 rounded-2xl">
+
+                <!-- grandchild-01 -->
+                <div class="flex justify-around items-center pb-8 border-b border-dashed border-gray-300">
+
+                    <!-- task -->
+                    <div class="flex items-center gap-5 py-8 pl-8 pr-5 bg-[#F4F7FF] rounded-xl w-66">
+                        <div class="bg-white p-4.5 rounded-full">
+                            <img src="assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <h1 class="text-[#00303C] opacity-80">Task Assigned </h1>
+                            <h1 class="text-3xl font-bold text-[#00303C]">05</h1>
+                        </div>
+                    </div>
+
+                    <!-- discover -->
+                    <div
+                        class="flex items-center gap-5.5 py-6 pl-10 pr-21.25 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl w-131">
+                        <img src="assets/board.png" alt="">
+                        <h1 class="text-2xl font-medium text-white">Discover Something<br>New Today!</h1>
+                    </div>
+
+                    <!-- date -->
+                    <div class="flex items-center gap-4 py-8 pl-6 pr-5 bg-[#F4F7FF] rounded-xl w-66">
+                        <div class="bg-white p-4.5 rounded-full">
+                            <img src="assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <h1 class="text-[#00303C] text-2xl">Wed ,<br><span class="font-bold">Jul 28 2025</span></h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- grandchild-02 -->
+                <div class="grid grid-cols-3 gap-9 mt-8">
+
+                    <!-- task container-01 -->
+                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                        <div class="border-b border-dashed border-gray-300 pb-3.5">
+                            <button class="bg-white py-2 px-4 rounded-lg">ShopEase</button>
+                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Fix Mobile Button Issue</h1>
+                            <div class=" bg-white rounded-lg p-4">
+                                <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlapping
+                                    elements...</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <div>
+                                <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
+                                <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            </div>
+                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- task container-02 -->
+                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                        <div class="border-b border-dashed border-gray-300 pb-3.5">
+                            <button class="bg-white py-2 px-4 rounded-lg">CloudSync</button>
+                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Add Dark Mode</h1>
+                            <div class=" bg-white rounded-lg p-4">
+                                <p class="text-black opacity-50">Store the user's preference in localStorage, update CSS vari...</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <div>
+                                <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
+                                <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            </div>
+                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- task container-03 -->
+                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                        <div class="border-b border-dashed border-gray-300 pb-3.5">
+                            <button class="bg-white py-2 px-4 rounded-lg">SwiftPay</button>
+                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Optimize Home page</h1>
+                            <div class=" bg-white rounded-lg p-4">
+                                <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <div>
+                                <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
+                                <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            </div>
+                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- task container-04 -->
+                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                        <div class="border-b border-dashed border-gray-300 pb-3.5">
+                            <button class="bg-white py-2 px-4 rounded-lg">Meta</button>
+                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Add new emoji 🤲</h1>
+                            <div class=" bg-white rounded-lg p-4">
+                                <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <div>
+                                <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
+                                <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            </div>
+                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- task container-05 -->
+                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                        <div class="border-b border-dashed border-gray-300 pb-3.5">
+                            <button class="bg-white py-2 px-4 rounded-lg">Google LLC</button>
+                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Integrate OpenAI API</h1>
+                            <div class=" bg-white rounded-lg p-4">
+                                <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <div>
+                                <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
+                                <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            </div>
+                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- task container-06 -->
+                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                        <div class="border-b border-dashed border-gray-300 pb-3.5">
+                            <button class="bg-white py-2 px-4 rounded-lg">Glassdoar</button>
+                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Improve Job searching</h1>
+                            <div class=" bg-white rounded-lg p-4">
+                                <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <div>
+                                <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
+                                <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            </div>
+                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
