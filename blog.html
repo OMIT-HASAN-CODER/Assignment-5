@@ -42,45 +42,67 @@
         <div class="bg-white p-6 rounded-xl mb-6">
             <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-1: What are the
                 different ways to select an element in the DOM?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
-                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <p class="mt-6 text-xl text-black opacity-50">We can select an element in the DOM using several JavaScript methods like-
+                <br>
+                <br>
+                1. <b>document.getElementById("id")</b> – Selects an element by its id.
+                <br>
+                2. <b>document.getElementsByClassName("class")</b> – Selects elements by their class name.
+                <br>
+                3. <b>document.getElementsByTagName("tag")</b> – Selects elements by their tag name.
+                <br>
+                4. <b>document.querySelector("selector")</b> – Selects the first element that matches a CSS selector.
+                <br>
+                5. <b>document.querySelectorAll("selector")</b> – Selects all elements that match a CSS selector.</p>
         </div>
 
         <!-- QNA-02 -->
         <div class="bg-white p-6 rounded-xl mb-6">
             <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-2: What is the
                 difference between innerHTML, innerText, and textContent ?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
-                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <p class="mt-6 text-xl text-black opacity-50">The difference between innerHTML, innerText, and textContent is-
+                <br>
+                <br>
+                <b>innerHTM</b> - Returns or sets the HTML content inside an element.
+                <br>
+                <b>innerText</b> - Returns or sets only the visible text.
+                <br>
+                <b>textContent</b> - Returns or sets all text inside an element.</p>
         </div>
 
         <!-- QNA-03 -->
         <div class="bg-white p-6 rounded-xl mb-6">
             <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-3: What is event
                 delegation in the DOM?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
-                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <p class="mt-6 text-xl text-black opacity-50">Event delegation is a technique in JavaScript where a parent element listens for events on its child elements. Instead of attaching event listeners to multiple child elements,
+                we attach a single event listener to the parent.</p>
         </div>
 
         <!-- QNA-04 -->
         <div class="bg-white p-6 rounded-xl mb-6">
             <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-4: What is event
                 bubbling in the DOM?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
-                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <p class="mt-6 text-xl text-black opacity-50">Event bubbling is a type of event propagation where an event starts at the target element and bubbles up to the parent elements. In other words, the event is first captured and handled by the target element, then propagated to its parent elements, and so on until it reaches the root of the DOM tree.</p>
         </div>
 
         <!-- QNA-05 -->
         <div class="bg-white p-6 rounded-xl mb-6">
             <h1 class="text-2xl font-bold pb-6 border-b border-dashed border-gray-300">Question-5: How do you create,
                 add, and remove elements using JavaScript?</h1>
-            <p class="mt-6 text-xl text-black opacity-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Molestias temporibus obcaecati blanditiis hic laboriosam quasi velit tempore, dolorum quam explicabo?
-                Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
+            <p class="mt-6 text-xl text-black opacity-50">I can create, add, and remove elements using JavaScript like this-
+                <br>
+                <br>
+                <b>Create an Element</b> - let newElement = document.createElement("div");
+                <br>
+                <br>
+                <b>Add an Element</b> - let parentElement = document.getElementById("parent");
+                <br>
+                parentElement.appendChild(newElement);
+                <br>
+                <br>
+                <b>Remove an Element</b> - let elementToRemove = document.getElementById("child");
+                <br>
+                elementToRemove.parentNode.removeChild(elementToRemove);</p>
         </div>
     </main>
     <script src="script/home.js"></script>
