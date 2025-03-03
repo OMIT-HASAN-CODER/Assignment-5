@@ -26,12 +26,12 @@
 <body class="font-poppins bg-[#F4F7FF]">
     <header class="max-w-[1536px] mx-auto mt-6 mb-5 bg-white px-6 py-6 rounded-2xl">
         <nav class="flex justify-between items-center">
-            <div class="flex items-center gap-1.5 cursor-pointer">
+            <div id="home" class="flex items-center gap-1.5 cursor-pointer">
                 <img src="assets/logo.png" alt="">
                 <h1 class="text-4xl font-light text-[#00303C]">Dev<span class="font-bold text-[#00303C]">Board</span>
                 </h1>
             </div>
-            <button id="home" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Back to
+            <button id="index" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Back to
                 Desk</button>
         </nav>
     </header>
@@ -83,11 +83,7 @@
                 Facere, quod nihil commodi quasi sed odio doloribus aut! Quidem.</p>
         </div>
     </main>
-    <script>
-        document.getElementById("home").addEventListener("click", function () {
-            window.location.href = "index.html";
-        });
-    </script>
+    <script src="script/home.js"></script>
 </body>
 
 </html>

@@ -26,7 +26,7 @@
 <body class="font-poppins bg-[#F4F7FF]">
     <header class="max-w-[1536px] mx-auto mt-6 mb-5 bg-white px-6 py-6 rounded-2xl">
         <nav class="flex justify-between items-center">
-            <div class="flex items-center gap-1.5">
+            <div id="home" class="flex items-center gap-1.5 cursor-pointer">
                 <img src="assets/logo.png" alt="">
                 <h1 class="text-4xl font-light text-[#00303C]">Dev<span class="font-bold text-[#00303C]">Board</span>
                 </h1>
@@ -34,9 +34,9 @@
             <div class="flex items-center gap-11">
                 <div class="flex items-center gap-4 bg-[#F4F7FF] py-4.5 px-4 rounded-4xl">
                     <img src="assets/checkbox.png" alt="">
-                    <h1 class="text-3xl text-[#1E1E1E] font-bold">23</h1>
+                    <h1 id="task-progress" class="text-3xl text-[#1E1E1E] font-bold"><span id="completed-tasks">23</span></h1>
                 </div>
-                <img class="bg-[#F4F7FF] p-3 rounded-full" src="assets/theme-btn.png" alt="">
+                <img id="color-btn" class="bg-[#F4F7FF] p-3 rounded-full" src="assets/theme-btn.png" alt="">
             </div>
         </nav>
     </header>
@@ -58,7 +58,7 @@
                         </div>
                         <div>
                             <h1 class="text-[#00303C] opacity-80">Task Assigned </h1>
-                            <h1 class="text-3xl font-bold text-[#00303C]">06</h1>
+                            <h1 id="task-finish" class="text-3xl font-bold text-[#00303C]"><span id="task-assigned">6</span></h1>
                         </div>
                     </div>
 
@@ -74,9 +74,7 @@
                         <div class="bg-white p-4.5 rounded-full">
                             <img src="assets/calender.png" alt="">
                         </div>
-                        <div>
-                            <h1 class="text-[#00303C] text-2xl">Wed ,<br><span class="font-bold">Jul 28 2025</span></h1>
-                        </div>
+                        <div id="current-date"></div>
                     </div>
                 </div>
 
@@ -84,10 +82,10 @@
                 <div class="grid grid-cols-3 gap-9 mt-8">
 
                     <!-- task container-01 -->
-                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                    <div class="task bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
                         <div class="border-b border-dashed border-gray-300 pb-3.5">
                             <button class="bg-white py-2 px-4 rounded-lg">ShopEase</button>
-                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Fix Mobile Button Issue</h1>
+                            <h1 class="task-title text-[#00303C] my-4 text-2xl font-medium">Fix Mobile Button Issue</h1>
                             <div class=" bg-white rounded-lg p-4">
                                 <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
                             </div>
@@ -97,15 +95,15 @@
                                 <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
                                 <p class="text-[#00303C] font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                            <button class="complete-btn bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Completed</button>
                         </div>
                     </div>
 
                     <!-- task container-02 -->
-                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                    <div class="task bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
                         <div class="border-b border-dashed border-gray-300 pb-3.5">
                             <button class="bg-white py-2 px-4 rounded-lg">CloudSync</button>
-                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Add Dark Mode</h1>
+                            <h1 class="task-title text-[#00303C] my-4 text-2xl font-medium">Add Dark Mode</h1>
                             <div class=" bg-white rounded-lg p-4">
                                 <p class="text-black opacity-50">Store the user's preference in localStorage, update CSS
                                     vari...</p>
@@ -116,15 +114,15 @@
                                 <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
                                 <p class="text-[#00303C] font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                            <button class="complete-btn bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Completed</button>
                         </div>
                     </div>
 
                     <!-- task container-03 -->
-                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                    <div class=" task bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
                         <div class="border-b border-dashed border-gray-300 pb-3.5">
                             <button class="bg-white py-2 px-4 rounded-lg">SwiftPay</button>
-                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Optimize Home page</h1>
+                            <h1 class="task-title text-[#00303C] my-4 text-2xl font-medium">Optimize Home page</h1>
                             <div class=" bg-white rounded-lg p-4">
                                 <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
                             </div>
@@ -134,15 +132,15 @@
                                 <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
                                 <p class="text-[#00303C] font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                            <button class="complete-btn bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Completed</button>
                         </div>
                     </div>
 
                     <!-- task container-04 -->
-                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                    <div class="task bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
                         <div class="border-b border-dashed border-gray-300 pb-3.5">
                             <button class="bg-white py-2 px-4 rounded-lg">Meta</button>
-                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Add new emoji 🤲</h1>
+                            <h1 class="task-title text-[#00303C] my-4 text-2xl font-medium">Add new emoji 🤲</h1>
                             <div class=" bg-white rounded-lg p-4">
                                 <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
                             </div>
@@ -152,15 +150,15 @@
                                 <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
                                 <p class="text-[#00303C] font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                            <button class="complete-btn bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Completed</button>
                         </div>
                     </div>
 
                     <!-- task container-05 -->
-                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                    <div class="task bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
                         <div class="border-b border-dashed border-gray-300 pb-3.5">
                             <button class="bg-white py-2 px-4 rounded-lg">Google LLC</button>
-                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Integrate OpenAI API</h1>
+                            <h1 class="task-title text-[#00303C] my-4 text-2xl font-medium">Integrate OpenAI API</h1>
                             <div class=" bg-white rounded-lg p-4">
                                 <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
                             </div>
@@ -170,15 +168,15 @@
                                 <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
                                 <p class="text-[#00303C] font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                            <button class="complete-btn bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Completed</button>
                         </div>
                     </div>
 
                     <!-- task container-06 -->
-                    <div class="bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
+                    <div class="task bg-[#F4F7FF] rounded-2xl p-6 w-85.5">
                         <div class="border-b border-dashed border-gray-300 pb-3.5">
                             <button class="bg-white py-2 px-4 rounded-lg">Glassdoar</button>
-                            <h1 class="text-[#00303C] my-4 text-2xl font-medium">Improve Job searching</h1>
+                            <h1 class="task-title text-[#00303C] my-4 text-2xl font-medium">Improve Job searching</h1>
                             <div class=" bg-white rounded-lg p-4">
                                 <p class="text-black opacity-50">Debug using Chrome DevTools, check for overlappi...</p>
                             </div>
@@ -188,7 +186,7 @@
                                 <h1 class="text-[#00303C] Copacity-70">Deadline</h1>
                                 <p class="text-[#00303C] font-medium">21 March 2025</p>
                             </div>
-                            <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg">Completed</button>
+                            <button class="complete-btn bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -202,17 +200,15 @@
                         <h1 class="text-xl text-[#00303C] font-medium">Activity Log</h1>
                     </div>
                     <div class="ml-20.75 mr-17.25">
-                        <button class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg ">Clear History</button>
+                        <button id="clear-history" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg cursor-pointer">Clear History</button>
                     </div>
                 </div>
+                <div id="activity-log"></div>
             </div>
         </div>
     </main>
-    <script>
-        document.getElementById("blog").addEventListener("click", function () {
-            window.location.href = "blog.html";
-        });
-    </script>
+    <script src="script/blog.js"></script>
+    <script src="script/task.js"></script>
 </body>
 
 </html>
